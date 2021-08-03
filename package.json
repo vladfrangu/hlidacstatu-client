@@ -1,0 +1,80 @@
+{
+	"name": "hlidacstatu-client",
+	"version": "1.0.0",
+	"description": "A client for interacting with the https://www.hlidacstatu.cz API",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"scripts": {
+		"build": "tsc && npm run build:esm",
+		"build:ci": "tsc --noEmit",
+		"build:esm": "gen-esm-wrapper ./dist/index.js ./dist/index.mjs",
+		"clean": "rimraf dist",
+		"lint": "eslint --fix --ext mjs,ts src/**/*.ts",
+		"prebuild:node": "npm run clean",
+		"prepare": "is-ci || husky install",
+		"prepublishOnly": "run-s clean test:lint build:node",
+		"test": "jest",
+		"test:ci": "jest --verbose --no-stack-trace",
+		"test:lint": "eslint --ext mjs,ts src/**/*.ts"
+	},
+	"keywords": [
+		"hlidacstatu",
+		"hlidac",
+		"statu",
+		"state",
+		"guard",
+		"cz"
+	],
+	"author": "Vlad Frangu <vladfrangu@tbd>",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/vladfrangu/hlidacstatu-client/issues"
+	},
+	"homepage": "https://github.com/vladfrangu/hlidacstatu-client#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/vladfrangu/hlidacstatu-client.git"
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">= 12"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.8",
+		"@babel/plugin-proposal-decorators": "^7.14.5",
+		"@babel/preset-env": "^7.14.9",
+		"@babel/preset-typescript": "^7.14.5",
+		"@types/jest": "^26.0.24",
+		"@types/node": "^16.4.10",
+		"@typescript-eslint/eslint-plugin": "^4.29.0",
+		"@typescript-eslint/parser": "^4.29.0",
+		"babel-jest": "^27.0.6",
+		"babel-plugin-transform-typescript-metadata": "^0.3.2",
+		"eslint": "^7.32.0",
+		"eslint-config-marine": "^9.0.6",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"gen-esm-wrapper": "^1.1.2",
+		"husky": "^7.0.1",
+		"is-ci": "^3.0.0",
+		"jest": "^27.0.6",
+		"lint-staged": "^11.1.1",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.3.2",
+		"pretty-quick": "^3.1.1",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"tslib": "^1.14.1"
+	}
+}
