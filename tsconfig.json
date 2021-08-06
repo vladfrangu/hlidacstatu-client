@@ -1,27 +1,22 @@
 {
-	// Mapped from https://www.typescriptlang.org/tsconfig
 	"compilerOptions": {
-		// Type Checking
 		"alwaysStrict": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
-		// TypeScript 4.4
-		// "exactOptionalPropertyTypes": true,
+
+		"exactOptionalPropertyTypes": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"strict": true,
-		// TypeScript 4.4
-		// "useUnknownInCatchVariables": true,
+		"useUnknownInCatchVariables": true,
 
-		// Modules
 		"module": "CommonJS",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 
-		// Emit
 		"declaration": true,
 		"declarationMap": true,
 		"importHelpers": true,
@@ -37,14 +32,12 @@
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
 
-		// Language and Environment
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"lib": ["ESNext"],
 		"target": "ES2020",
 		"useDefineForClassFields": true,
 
-		// Completeness
 		"skipLibCheck": true
 	},
 	"include": ["src/**/*.ts"]
