@@ -11,6 +11,7 @@
 			"import": "./dist/index.mjs"
 		}
 	},
+	"sideEffects": false,
 	"scripts": {
 		"build": "tsc && npm run build:esm",
 		"build:ci": "tsc --noEmit",
@@ -75,6 +76,7 @@
 		"typescript": "^4.3.5"
 	},
 	"dependencies": {
-		"tslib": "^1.14.1"
+		"cross-fetch": "^3.1.4",
+		"tslib": "^2.3.0"
 	}
 }

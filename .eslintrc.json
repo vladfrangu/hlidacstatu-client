@@ -5,5 +5,8 @@
 	},
 	"env": {
 		"jest": true
+	},
+	"rules": {
+		"@typescript-eslint/dot-notation": 0
 	}
 }
