@@ -25,7 +25,7 @@ export class Zaznamy {
 		return result;
 	}
 
-	public async insertOrUpdated(data: ZaznamyData, mode?: ZaznamyMode) {
+	public async insertOrUpdate(data: ZaznamyData, mode?: ZaznamyMode) {
 		const url = new URL(Routes.zaznamy(this.dataset.datasetId, this.itemId));
 
 		if (typeof mode === 'string') {
