@@ -115,4 +115,13 @@ export const Routes = {
 	verejnezakazkyHledat() {
 		return `${VersionedApiBase}/verejnezakazky/hledat` as const;
 	},
+
+	// ApiV2Weby
+	weby(id?: string) {
+		if (id) {
+			return `${VersionedApiBase}/weby/${id}` as const;
+		}
+
+		return `${VersionedApiBase}/weby` as const;
+	},
 };

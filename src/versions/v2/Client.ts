@@ -10,6 +10,7 @@ import { Smlouvy } from './smlouvy/Smlouvy';
 import type { DumpInfoModel, HTTPResponseMessage } from './types/Api';
 import { Routes, VersionedApiBase } from './types/Routes';
 import { Verejnezakazky } from './vz/Verejnezakazky';
+import { Weby } from './weby/Weby';
 
 export class Client {
 	public static readonly VersionedApiBase = VersionedApiBase;
@@ -30,6 +31,8 @@ export class Client {
 	public readonly smlouvy = new Smlouvy(this);
 
 	public readonly verejnezakazky = new Verejnezakazky(this);
+
+	public readonly weby = new Weby(this);
 
 	public constructor(apiToken: string) {
 		this.apiToken = apiToken;
