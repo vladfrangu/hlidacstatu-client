@@ -15,3 +15,18 @@ export * from './types/Weby';
 // Datasety
 export * from './datasety/Dataset';
 export * from './datasety/Datasety';
+
+// Dotace
+export * from './dotace/Dotace';
+
+// Firmy
+export * from './firmy/Firmy';
+
+// Insolvence
+export * from './insolvence/Insolvence';
+
+// Osoby
+export * from './osoby/Osoby';
+
+// Smlouvy
+export * from './smlouvy/Smlouvy';

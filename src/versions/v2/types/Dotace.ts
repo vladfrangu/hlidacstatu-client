@@ -1,10 +1,10 @@
 export interface DotaceSearchResultDTO {
 	total: number;
 	page: number;
-	results: Dotace[] | null;
+	results: DotaceResult[] | null;
 }
 
-export interface Dotace {
+export interface DotaceResult {
 	idDotace: string | null;
 	datumPodpisu: string | null;
 	datumAktualizace: string | null;

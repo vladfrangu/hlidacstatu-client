@@ -119,3 +119,45 @@ export const enum InsolvenceHledatRazeni {
 	ModifiedDescending,
 	ModifiedAscending,
 }
+
+export const enum DataQualityEnum {
+	Zero,
+	One,
+	Two,
+	Three,
+	Four,
+	Five,
+}
+
+export const enum PravniRamce {
+	Zero,
+	One,
+	Two,
+	Three,
+}
+
+export const enum ImportanceLevel {
+	Zero,
+	One,
+
+	Five = 5,
+
+	Twenty = 20,
+
+	OneHundred = 100,
+
+	NegativeOne = -1,
+}
+
+export const enum SmlouvyHledatRazeni {
+	Relevance,
+	PublishedDescending,
+	PublishedAscending,
+	PriceAscending,
+	PriceDescending,
+	ClosedDescending,
+	ClosedAscending,
+	ErrorCountDescending,
+	Customer,
+	Supplier,
+}

@@ -2,7 +2,7 @@ import { fetch } from '../../../fetchUtil/fetch';
 import { FetchResultTypes } from '../../../fetchUtil/types';
 import type { DotaceHledatRazeni } from '../../Constants';
 import type { Client } from '../Client';
-import type { DotaceSearchResultDTO, Dotace as DotaceResult } from '../types/Dotace';
+import type { DotaceSearchResultDTO, DotaceResult } from '../types/Dotace';
 import { Routes } from '../types/Routes';
 
 export class Dotace {

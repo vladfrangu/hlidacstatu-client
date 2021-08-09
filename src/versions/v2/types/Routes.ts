@@ -89,4 +89,21 @@ export const Routes = {
 	osobySocial() {
 		return `${VersionedApiBase}/osoby/social` as const;
 	},
+
+	// ApiV2Smlouvy
+	smlouvyHledat() {
+		return `${VersionedApiBase}/smlouvy/hledat` as const;
+	},
+
+	smlouvy(id: string) {
+		return `${VersionedApiBase}/smlouvy/${id}` as const;
+	},
+
+	smlouvyVsechnaID() {
+		return `${VersionedApiBase}/smlouvy/vsechnaID` as const;
+	},
+
+	smlouvyText(id: string) {
+		return `${VersionedApiBase}/smlouvy/text/${id}` as const;
+	},
 };
