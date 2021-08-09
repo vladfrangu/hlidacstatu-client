@@ -63,4 +63,13 @@ export const Routes = {
 	firmySocial() {
 		return `${VersionedApiBase}/firmy/social` as const;
 	},
+
+	// ApiV2Insolvence
+	insolvenceHledat() {
+		return `${VersionedApiBase}/insolvence/hledat` as const;
+	},
+
+	insolvence(id: string) {
+		return `${VersionedApiBase}/insolvence/${id}` as const;
+	},
 };

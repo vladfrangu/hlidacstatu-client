@@ -111,3 +111,11 @@ export const enum SocialNetwork {
 	Five,
 	Six,
 }
+
+export const enum InsolvenceHledatRazeni {
+	Relevance,
+	StartedDescending,
+	PublishedDescending,
+	ModifiedDescending,
+	ModifiedAscending,
+}
