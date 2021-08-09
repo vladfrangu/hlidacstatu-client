@@ -5,6 +5,7 @@ import { Datasety } from './datasety/Datasety';
 import { Dotace } from './dotace/Dotace';
 import { Firmy } from './firmy/Firmy';
 import { Insolvence } from './insolvence/Insolvence';
+import { Osoby } from './osoby/Osoby';
 import type { DumpInfoModel, HTTPResponseMessage } from './types/Api';
 import { Routes, VersionedApiBase } from './types/Routes';
 
@@ -21,6 +22,8 @@ export class Client {
 	public readonly firmy = new Firmy(this);
 
 	public readonly insolvence = new Insolvence(this);
+
+	public readonly osoby = new Osoby(this);
 
 	public constructor(apiToken: string) {
 		this.apiToken = apiToken;

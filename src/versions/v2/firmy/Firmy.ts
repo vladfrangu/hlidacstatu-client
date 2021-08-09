@@ -31,7 +31,7 @@ export class Firmy {
 			url.searchParams.set('typ', String(typ));
 		}
 
-		const result = await fetch<FirmaSocialDTO>(url, this.client['apiToken'], FetchResultTypes.JSON);
+		const result = await fetch<FirmaSocialDTO[]>(url, this.client['apiToken'], FetchResultTypes.JSON);
 
 		return result;
 	}

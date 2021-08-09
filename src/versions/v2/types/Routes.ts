@@ -72,4 +72,21 @@ export const Routes = {
 	insolvence(id: string) {
 		return `${VersionedApiBase}/insolvence/${id}` as const;
 	},
+
+	// ApiV2Osoby
+	osoby(osobaId: string) {
+		return `${VersionedApiBase}/osoby/${osobaId}` as const;
+	},
+
+	osobyHledatFtx() {
+		return `${VersionedApiBase}/osoby/hledatFtx` as const;
+	},
+
+	osobyHledat() {
+		return `${VersionedApiBase}/osoby/hledat` as const;
+	},
+
+	osobySocial() {
+		return `${VersionedApiBase}/osoby/social` as const;
+	},
 };

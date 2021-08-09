@@ -12,7 +12,7 @@ export class Dotace {
 		this.client = client;
 	}
 
-	public async hledat(options: DotaceHledatQuery) {
+	public async hledat(options: DotaceHledatQuery = {}) {
 		const url = new URL(Routes.dotaceHledat());
 
 		for (const [key, value] of Object.entries(options)) {
