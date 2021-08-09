@@ -1,12 +1,12 @@
-name: Tests Cron
+name: ESLint and TypeScript - Cron
 
 on:
   schedule:
     - cron: '0 */12 * * *'
 
 jobs:
-  test:
-    name: Test
+  lint:
+    name: ESLint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -23,5 +23,5 @@ jobs:
       - name: Build TypeScript
         run: npm run build
 
-      - name: Run Tests
-        run: npm run test:ci
+      - name: Run ESLint
+        run: npm run test:lint

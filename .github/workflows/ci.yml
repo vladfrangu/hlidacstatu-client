@@ -1,4 +1,4 @@
-name: Lint
+name: ESLint and TypeScript
 
 on: [push, pull_request]
 
