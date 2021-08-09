@@ -161,3 +161,29 @@ export const enum SmlouvyHledatRazeni {
 	Customer,
 	Supplier,
 }
+
+export const enum StavyZakazky {
+	Zero,
+	One,
+
+	Fifty = 50,
+
+	OneHundred = 100,
+
+	TwoHundred = 200,
+
+	ThreeHundred = 300,
+}
+
+export const enum VerejnezakazkyHledatRazeni {
+	Relevance,
+	PublishedDescending,
+	PublishedAscending,
+	PriceAscending,
+	PriceDescending,
+	ClosedDescending,
+	ClosedAscending,
+
+	Customer = 8,
+	Supplier,
+}

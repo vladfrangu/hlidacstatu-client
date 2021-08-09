@@ -9,6 +9,7 @@ import { Osoby } from './osoby/Osoby';
 import { Smlouvy } from './smlouvy/Smlouvy';
 import type { DumpInfoModel, HTTPResponseMessage } from './types/Api';
 import { Routes, VersionedApiBase } from './types/Routes';
+import { Verejnezakazky } from './vz/Verejnezakazky';
 
 export class Client {
 	public static readonly VersionedApiBase = VersionedApiBase;
@@ -27,6 +28,8 @@ export class Client {
 	public readonly osoby = new Osoby(this);
 
 	public readonly smlouvy = new Smlouvy(this);
+
+	public readonly verejnezakazky = new Verejnezakazky(this);
 
 	public constructor(apiToken: string) {
 		this.apiToken = apiToken;

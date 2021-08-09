@@ -30,3 +30,6 @@ export * from './osoby/Osoby';
 
 // Smlouvy
 export * from './smlouvy/Smlouvy';
+
+// Verejnezakazky
+export * from './vz/Verejnezakazky';

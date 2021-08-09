@@ -106,4 +106,13 @@ export const Routes = {
 	smlouvyText(id: string) {
 		return `${VersionedApiBase}/smlouvy/text/${id}` as const;
 	},
+
+	// ApiV2VZ
+	verejnezakazky(id: string) {
+		return `${VersionedApiBase}/verejnezakazky/${id}` as const;
+	},
+
+	verejnezakazkyHledat() {
+		return `${VersionedApiBase}/verejnezakazky/hledat` as const;
+	},
 };
