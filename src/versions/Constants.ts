@@ -1,3 +1,5 @@
+export const ApiBase = 'https://www.hlidacstatu.cz/api';
+
 export const enum SortingOrder {
 	Ascending,
 	Descending,
@@ -90,4 +92,12 @@ export const enum ZaznamyMode {
 	Rewrite = 'rewrite',
 }
 
-export const ApiBase = 'https://www.hlidacstatu.cz/api';
+export const enum DotaceHledatRazeni {
+	Relevance,
+	SignatureDateDescending,
+	SignatureDateAscending,
+	ValueDescending,
+	ValueAscending,
+	BusinessIdDescending,
+	BusinessIdAscending,
+}

@@ -26,7 +26,7 @@ export const Routes = {
 		return `${VersionedApiBase}/datasety` as const;
 	},
 
-	hledat(datasetId: string) {
+	datasetyHledat(datasetId: string) {
 		return `${VersionedApiBase}/datasety/${datasetId}/hledat` as const;
 	},
 
@@ -40,5 +40,14 @@ export const Routes = {
 
 	zaznamyExistuje(datasetId: string, itemId: string) {
 		return `${VersionedApiBase}/datasety/${datasetId}/zaznamy/${itemId}/existuje` as const;
+	},
+
+	// ApiV2Dotace
+	dotaceHledat() {
+		return `${VersionedApiBase}/dotace/hledat` as const;
+	},
+
+	dotace(id: string) {
+		return `${VersionedApiBase}/dotace/${id}` as const;
 	},
 };
