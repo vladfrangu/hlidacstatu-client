@@ -3,6 +3,7 @@ import { FetchResultTypes } from '../../fetchUtil/types';
 import { Dataset } from './datasety/Dataset';
 import { Datasety } from './datasety/Datasety';
 import { Dotace } from './dotace/Dotace';
+import { Firmy } from './firmy/Firmy';
 import type { DumpInfoModel, HTTPResponseMessage } from './types/Api';
 import { Routes, VersionedApiBase } from './types/Routes';
 
@@ -15,6 +16,8 @@ export class Client {
 	public readonly datasety = new Datasety(this);
 
 	public readonly dotace = new Dotace(this);
+
+	public readonly firmy = new Firmy(this);
 
 	public constructor(apiToken: string) {
 		this.apiToken = apiToken;

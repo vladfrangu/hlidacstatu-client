@@ -50,4 +50,17 @@ export const Routes = {
 	dotace(id: string) {
 		return `${VersionedApiBase}/dotace/${id}` as const;
 	},
+
+	// ApiV2Firmy
+	firmyIco(ico: string) {
+		return `${VersionedApiBase}/firmy/ico/${ico}` as const;
+	},
+
+	firmy(jmenoFirmy: string) {
+		return `${VersionedApiBase}/firmy/${jmenoFirmy}` as const;
+	},
+
+	firmySocial() {
+		return `${VersionedApiBase}/firmy/social` as const;
+	},
 };

@@ -101,3 +101,13 @@ export const enum DotaceHledatRazeni {
 	BusinessIdDescending,
 	BusinessIdAscending,
 }
+
+export const enum SocialNetwork {
+	Zero,
+	One,
+	Two,
+	Three,
+	Four,
+	Five,
+	Six,
+}
