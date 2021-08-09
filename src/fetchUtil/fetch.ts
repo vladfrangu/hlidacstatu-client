@@ -1,10 +1,10 @@
 /* eslint-disable no-redeclare */
-import crossFetch from 'cross-fetch'; // hlidacstatu: Modified from node-fetch
+import crossFetch, { Headers } from 'cross-fetch'; // hlidacstatu: Modified from node-fetch
 import { QueryError } from './QueryError';
 import { FetchResultTypes } from './types';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports
-const Package: typeof import('../../package.json') = require('../../package.json');
+// eslint-disable-next-line no-eval
+const Package = eval(`require('../../package.json')`) as { homepage: string; version: string };
 
 const kDefaultUserAgent = `Hlidac Statu TypeScript Client (${Package.homepage}, ${Package.version})`;
 

@@ -16,7 +16,7 @@ export class Client {
 	public static readonly VersionedApiBase = VersionedApiBase;
 	public static readonly Routes = Routes;
 
-	private readonly apiToken: string;
+	private readonly apiToken!: string;
 
 	public readonly datasety = new Datasety(this);
 
@@ -35,7 +35,10 @@ export class Client {
 	public readonly weby = new Weby(this);
 
 	public constructor(apiToken: string) {
-		this.apiToken = apiToken;
+		Reflect.defineProperty(this, 'apiToken', {
+			enumerable: false,
+			value: apiToken,
+		});
 	}
 
 	public async ping(text: string) {
