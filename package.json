@@ -18,9 +18,9 @@
 		"build:esm": "gen-esm-wrapper ./dist/index.js ./dist/index.mjs",
 		"clean": "rimraf dist",
 		"lint": "eslint --fix --ext mjs,ts src/**/*.ts",
-		"prebuild:node": "npm run clean",
+		"prebuild": "npm run clean",
 		"prepare": "is-ci || husky install",
-		"prepublishOnly": "run-s clean test:lint build:node",
+		"prepublishOnly": "run-s test:lint build",
 		"test:lint": "eslint --ext mjs,ts src/**/*.ts"
 	},
 	"keywords": [
