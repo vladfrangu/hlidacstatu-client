@@ -12,7 +12,7 @@ export class Insolvence {
 		this.client = client;
 	}
 
-	public async hledat(options: InsolvenceHledatQuery = {}) {
+	public async hledat(options: InsolvenceHledatQuery) {
 		const url = new URL(Routes.insolvenceHledat());
 
 		for (const [key, value] of Object.entries(options)) {
@@ -32,7 +32,7 @@ export class Insolvence {
 }
 
 export interface InsolvenceHledatQuery {
-	dotaz?: string;
+	dotaz: string;
 	strana?: number;
 	razeni?: InsolvenceHledatRazeni;
 }

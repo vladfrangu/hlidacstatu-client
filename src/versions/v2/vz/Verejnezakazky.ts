@@ -22,7 +22,7 @@ export class Verejnezakazky {
 		return result;
 	}
 
-	public async hledat(options: VerejnaZakazkaHledatQuery = {}) {
+	public async hledat(options: VerejnaZakazkaHledatQuery) {
 		const url = new URL(Routes.verejnezakazkyHledat());
 
 		for (const [key, value] of Object.entries(options)) {
@@ -36,7 +36,7 @@ export class Verejnezakazky {
 }
 
 export interface VerejnaZakazkaHledatQuery {
-	dotaz?: string;
+	dotaz: string;
 	strana?: number;
 	razeni?: VerejnezakazkyHledatRazeni;
 }

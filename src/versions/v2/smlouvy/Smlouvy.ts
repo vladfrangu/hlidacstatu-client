@@ -12,7 +12,7 @@ export class Smlouvy {
 		this.client = client;
 	}
 
-	public async hledat(options: SmlouvyHledatQuery = {}) {
+	public async hledat(options: SmlouvyHledatQuery) {
 		const url = new URL(Routes.smlouvyHledat());
 
 		for (const [key, value] of Object.entries(options)) {
@@ -44,7 +44,7 @@ export class Smlouvy {
 }
 
 export interface SmlouvyHledatQuery {
-	dotaz?: string;
+	dotaz: string;
 	strana?: number;
 	razeni?: SmlouvyHledatRazeni;
 }

@@ -42,7 +42,7 @@ export class Dataset {
 		return result;
 	}
 
-	public async hledat(options: DatasetHledatQuery = {}) {
+	public async hledat(options: DatasetHledatQuery) {
 		const url = new URL(Routes.datasety(this.datasetId));
 
 		for (const [key, value] of Object.entries(options)) {
@@ -75,7 +75,7 @@ export class Dataset {
 }
 
 export interface DatasetHledatQuery {
-	dotaz?: string;
+	dotaz: string;
 	strana?: number;
 	sort?: string;
 	desc?: SortingOrder;
