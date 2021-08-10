@@ -42,7 +42,7 @@ export class Client {
 	}
 
 	public async ping(text: string) {
-		const result = await fetch(Routes.ping(text), this.apiToken, FetchResultTypes.Text);
+		const result = await fetch(Routes.ping(encodeURIComponent(text)), this.apiToken, FetchResultTypes.Text);
 
 		return result;
 	}

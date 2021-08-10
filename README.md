@@ -10,12 +10,10 @@ Simple to use API client for [Hlidac Statu](https://www.hlidacstatu.cz/).
 
 ## Installation
 
-Install with [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com) / [pnpm](https://pnpm.js.org/):
+Install with [npm](https://www.npmjs.com/):
 
 ```sh
 npm install hlidacstatu-client
-yarn add hlidacstatu-client
-pnpm add hlidacstatu-client
 ```
 
 ### Usage
